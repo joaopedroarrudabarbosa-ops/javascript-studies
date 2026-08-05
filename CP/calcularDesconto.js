@@ -1,5 +1,5 @@
 function calcularDesconto(preco, desconto) {
-    if (typeof preco !== "number" || preco <= 0) {
+    if (typeof preco !== "number" || preco < 0) {
         return "Preço inválido. Por favor, insira um número positivo."
     }
     if (typeof desconto !== "number" || desconto < 0 || desconto > 100) {
